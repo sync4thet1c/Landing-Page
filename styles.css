@@ -10,7 +10,7 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-  /* font-family: var(--navfonts); */
+  font-family: var(--navfonts);
 }
 
 /* nav bar styling */
@@ -116,6 +116,33 @@ input[type="checkbox"] {
   display: none;
 }
 /* nav bar styling comes to and end */
+
+/* ordering */
+.ordering-platform {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  align-items: center;
+  flex-wrap: nowrap;
+  margin-top: 20px;
+}
+
+.online-order {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  justify-content: space-evenly;
+}
+
+.online-order img {
+  width: 450px;
+  height: 280px;
+  /* padding-right: 25px */
+}
+
+.online-order .bhoj {
+    margin-left: 60px;
+  }
 
 /* Contacts styling */
 /* forms */
@@ -604,6 +631,33 @@ footer hr {
   .footer {
     font-family: var(--navfonts);
     font-size: 14px;
+  }
+
+  /* ordering-platform */
+  .ordering-platform {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: nowrap;
+    margin-top: 15px;
+  }
+
+  .online-order {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    justify-content: space-evenly;
+  }
+
+  .online-order img {
+    width: 350px;
+    height: 250px;
+    margin-bottom: 50px;
+  }
+
+  .online-order .bhoj {
+    margin-top: 50px;
   }
 }
 

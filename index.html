@@ -8,8 +8,11 @@
     <link rel="stylesheet" href="styles.css">
     <script src="script.js"></script>
     <title>Document</title>
-</body>
-</html><input type="checkbox" id="check" />
+</head>
+
+<body>
+  <button id="btn-scrolling"><i class="fas fa-arrow-up"></i></button>
+    <input type="checkbox" id="check" />
       <nav class="nav-active">
         <a class="brand-name">The Great Kitchen & Restaurants</a>
 
@@ -19,11 +22,12 @@
         </div>
 
         <ol>
-          <li><a href="#home">Home</a></li>
+          <li><a class="active" href="#home">Home</a></li>
           <li><a href="#food">Food</a></li>
           <li><a href="#offer">Offers</a></li>
-          <li><a href="#about">About</a></li>
-          <li><a href="#contacts">Contacts</a></li>
+          <li><a href="#my-form">Contacts</a></li>
+          <li><a href="#About">About</a></li>
+          
         </ol>
 
         <label for="check" class="bar">
@@ -33,20 +37,20 @@
       </nav>
     </header>
 
-    <section></section>
-
-<div class="ordering-platform">
-    <h2>Our Ordering Partners</h2>
-    <div class="online-order">
-        <a href="https://foodmandu.com/" target="blank"><img src="Images/foodmandu2.jpg"></a>
-        <a href="https://pathao.com/np/" target="blank" ><img src="Images/pathao2.png"></a>
-        <a href="https://www.bhojdeals.com/np/" target="blank" ><img src="Images/Bhojdeal.jpg" class="bhoj" ></a>
+    <section id="home"></section>
+    <h2 class="offerring">Limited Offers</h2>
+    <div id="offer" class="food-offers">
+      
+      <img src="Images/Smallone.jpg">
+      <img src="Images/Smallone.jpg">
+      <img src="Images/Smallone.jpg">
+      <img src="Images/Smallone.jpg">
+      <img src="Images/Smallone.jpg">
+      <img src="Images/Smallone.jpg">
     </div>
-</div>
 
-
-<form action="https://formspree.io/f/xwkaayqe" method="POST" id="my-form" class="message-form">
-  <div class="contacts">
+<form id="my-form" action="https://formspree.io/f/xwkaayqe" method="POST"  class="message-form">
+  <div class="contacts"> 
     <h2>Contact Us</h2>
     <label for="fname">First Name</label>
     <input type="text" placeholder="First Name" name="fname" autocomplete="off" required>
@@ -71,7 +75,14 @@
   </div>
 </form>
 
-
+<div class="ordering-platform" id="About">
+  <h2>Our Ordering Partners</h2>
+  <div class="online-order">
+      <a href="https://foodmandu.com/" target="blank"><img src="Images/foodmandu2.jpg"></a>
+      <a href="https://pathao.com/np/" target="blank" ><img src="Images/pathao2.png"></a>
+      <a href="https://www.bhojdeals.com/np/" target="blank" ><img src="Images/Bhojdeal.jpg" class="bhoj" ></a>
+  </div>
+</div>
 
 <div class="footer">
   <div class="heading">
@@ -124,3 +135,5 @@
     <a href="#policy">Privacy Policy</a>
   </footer>
 </div>
+</body>
+</html>

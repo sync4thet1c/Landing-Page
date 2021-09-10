@@ -11,6 +11,26 @@
   padding: 0;
   box-sizing: border-box;
   font-family: var(--navfonts);
+  scroll-behavior: smooth;
+  scroll-snap-type: mandatory;
+}
+
+#btn-scrolling {
+  position: fixed;
+  right: 10px;
+  bottom: 10px;
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  background-blend-mode: red;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.25);
+  color: #000;
+  border: none;
+  cursor: pointer;
+}
+
+#btn-scrolling:active {
+  background-color: red;
 }
 
 /* nav bar styling */
@@ -27,6 +47,7 @@ nav {
   /* background-color: #000; */
   transition: background-color 0.3s ease;
   font-family: var(--navfonts);
+  z-index: 1;
 }
 
 nav .brand-name {
@@ -115,16 +136,18 @@ input[type="checkbox"] {
   -webkit-appearance: none;
   display: none;
 }
-/* nav bar styling comes to and end */
+/* nav bar styling comes to an end */
 
 /* ordering */
 .ordering-platform {
+  scroll-margin: 80px;
   display: flex;
   flex-direction: column;
   justify-content: space-evenly;
   align-items: center;
   flex-wrap: nowrap;
-  margin-top: 20px;
+  /* margin-top: 20px; */
+  margin-bottom: 90px;
 }
 
 .online-order {
@@ -143,6 +166,7 @@ input[type="checkbox"] {
 /* Contacts styling */
 /* forms */
 .message-form {
+  scroll-margin: 130px;
   display: flex;
   justify-content: flex-start;
   align-items: flex-start;
@@ -655,6 +679,38 @@ footer hr {
   .online-order .bhoj {
     margin-top: 50px;
   }
+
+   /* offers */
+  .food-offers {
+    scroll-margin: 150px;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .food-offers img {
+    display: flex;
+    flex-direction:column;
+    flex-wrap: wrap;
+    align-items: center;
+    border: 2px solid #fafafa;
+    margin: 40px 40px 40px 40px;
+    max-width: 90%;
+    max-height: 200px;
+  }
+  
+  .food-offers img:hover {
+    filter: brightness(50%);
+  }
+  
+  .offerring {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 30px;
+  }
 }
 
 section {
@@ -667,4 +723,37 @@ section {
   top: 0;
   z-index: -1;
   filter: brightness(80%);
+}
+
+.food-offers {
+  scroll-margin: 150px;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  width: 100wh;
+}
+
+.food-offers img {
+  display: flex;
+  flex-direction: row;
+  /* flex-wrap: wrap; */
+  justify-content: space-around;
+  align-items: center;
+  width: auto;
+  height: 300px;
+  border: 2px solid #fafafa;
+  margin: 40px 40px 40px 40px;
+}
+
+.food-offers img:hover {
+  filter: brightness(50%);
+}
+
+.offerring {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 30px;
 }

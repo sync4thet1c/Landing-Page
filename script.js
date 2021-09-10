@@ -2,7 +2,7 @@ window.addEventListener('scroll', function () {
     let header = document.querySelector('nav');
     let windowPosition = window.scrollY > 0;
     header.classList.toggle('nav-active', windowPosition); 
-})
+});
 
 window.addEventListener("DOMContentLoaded", function () {
     // get the form elements defined in your form HTML above
@@ -51,3 +51,4 @@ window.addEventListener("DOMContentLoaded", function () {
     xhr.send(data);
   }
   
+

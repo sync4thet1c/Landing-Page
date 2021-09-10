@@ -15,7 +15,7 @@
   scroll-snap-type: mandatory;
 }
 
-#btn-scrolling {
+.btn-scrolling {
   position: fixed;
   right: 10px;
   bottom: 10px;
@@ -29,7 +29,7 @@
   cursor: pointer;
 }
 
-#btn-scrolling:active {
+.btn-scrolling:active {
   background-color: red;
 }
 

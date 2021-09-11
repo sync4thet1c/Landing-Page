@@ -44,7 +44,7 @@ nav {
   justify-items: center;
   padding: 15px 30px;
   color: #fff;
-  /* background-color: #000; */
+  background-color: #000;
   transition: background-color 0.3s ease;
   font-family: var(--navfonts);
   z-index: 1;
@@ -140,14 +140,18 @@ input[type="checkbox"] {
 
 /* ordering */
 .ordering-platform {
-  scroll-margin: 80px;
+  scroll-margin: 48px;
   display: flex;
   flex-direction: column;
   justify-content: space-evenly;
   align-items: center;
   flex-wrap: nowrap;
-  /* margin-top: 20px; */
-  margin-bottom: 90px;
+  margin-top: 20px;
+  margin-bottom: 25px;
+}
+
+.ordering-platform h2 {
+  margin: 50px;
 }
 
 .online-order {
@@ -166,7 +170,7 @@ input[type="checkbox"] {
 /* Contacts styling */
 /* forms */
 .message-form {
-  scroll-margin: 130px;
+  scroll-margin: 100px;
   display: flex;
   justify-content: flex-start;
   align-items: flex-start;
@@ -397,12 +401,59 @@ footer hr {
   margin: 2rem 0;
 }
 
+
+section {
+  background: url("Images/Bg.png");
+  height: 100vh;
+  width: 100%;
+  position: relative;
+  background-position: top;
+  background-size: cover;
+  top: 0;
+  z-index: -1;
+  filter: brightness(80%);
+}
+
+.food-offers {
+  scroll-margin: 150px;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  width: 100wh;
+}
+
+.food-offers img {
+  display: flex;
+  flex-direction: row;
+  /* flex-wrap: wrap; */
+  justify-content: space-around;
+  align-items: center;
+  width: auto;
+  height: 300px;
+  border: 2px solid #fafafa;
+  margin: 40px 40px 0px 40px;
+}
+
+.food-offers img:hover {
+  filter: brightness(50%);
+}
+
+.offerring {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 30px;
+}
+
 /* media queriess */
 @media screen and (max-width: 1250px) {
   nav {
     display: block;
     padding: 0;
     transition: 0.3s ease;
+    position: relative;
   }
 
   nav .brand-name {
@@ -423,6 +474,7 @@ footer hr {
   }
 
   nav ol {
+    /* position: absolute; */
     display: flex;
     flex-direction: column;
     background: #000;
@@ -442,7 +494,7 @@ footer hr {
     color: #fff;
     font-size: 28px;
     padding: 25px;
-    display: block;
+    display: inline-block;
   }
 
   nav ol li:nth-child(1) {
@@ -503,6 +555,7 @@ footer hr {
   /* forms */
 
   .message-form {
+    scroll-margin: 40px;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -655,6 +708,7 @@ footer hr {
 
   /* ordering-platform */
   .ordering-platform {
+    scroll-margin: -40px;
     display: flex;
     flex-direction: column;
     justify-content: space-between;
@@ -682,7 +736,7 @@ footer hr {
 
    /* offers */
   .food-offers {
-    scroll-margin: 150px;
+    scroll-margin: 80px;
     display: flex;
     flex-direction: column;
     flex-wrap: wrap;
@@ -713,47 +767,3 @@ footer hr {
   }
 }
 
-section {
-  background: url("Images/Bg.png");
-  height: 100vh;
-  width: 100%;
-  position: relative;
-  background-position: top;
-  background-size: cover;
-  top: 0;
-  z-index: -1;
-  filter: brightness(80%);
-}
-
-.food-offers {
-  scroll-margin: 150px;
-  display: flex;
-  flex-direction: row;
-  flex-wrap: wrap;
-  justify-content: center;
-  align-items: center;
-  width: 100wh;
-}
-
-.food-offers img {
-  display: flex;
-  flex-direction: row;
-  /* flex-wrap: wrap; */
-  justify-content: space-around;
-  align-items: center;
-  width: auto;
-  height: 300px;
-  border: 2px solid #fafafa;
-  margin: 40px 40px 40px 40px;
-}
-
-.food-offers img:hover {
-  filter: brightness(50%);
-}
-
-.offerring {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  margin: 30px;
-}
